@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "events-by-marina",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "C:\\Users\\MC\\Desktop\\Events By Marina", "run", "dev", "--", "--port", "3003"],
+      "port": 3003
+    }
+  ]
+}

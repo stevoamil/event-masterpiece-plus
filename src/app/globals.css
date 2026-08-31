@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+:root {
+  /* Shared palette — cream/ink/gold, matching the Events By Marina brand reference */
+  --mm-beige-50: #faf6ef;
+  --mm-beige-100: #f2ebdf;
+  --mm-beige-200: #e7d7ba;
+  --mm-beige-300: #d6bd91;
+  --mm-ink-900: #1b1712;
+  --mm-ink-800: #2a241d;
+  --mm-ink-700: #3a2f22;
+  --mm-brass-500: #b6883f;
+  --mm-brass-400: #d9b978;
+  --mm-blush: #d9c2b0;
+
+  --glass-border: rgba(27, 23, 18, 0.1);
+  --glass-surface: rgba(250, 246, 239, 0.72);
+
+  --background: var(--mm-beige-50);
+  --foreground: var(--mm-ink-900);
+}
+
+@theme inline {
+  --color-beige-50: var(--mm-beige-50);
+  --color-beige-100: var(--mm-beige-100);
+  --color-beige-200: var(--mm-beige-200);
+  --color-beige-300: var(--mm-beige-300);
+  --color-ink-900: var(--mm-ink-900);
+  --color-ink-800: var(--mm-ink-800);
+  --color-ink-700: var(--mm-ink-700);
+  --color-brass-500: var(--mm-brass-500);
+  --color-brass-400: var(--mm-brass-400);
+  --color-blush: var(--mm-blush);
+  --color-glass-border: var(--glass-border);
+  --color-glass-surface: var(--glass-surface);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-jost);
+  --font-script: var(--font-tangerine);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  background: var(--background);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--mm-brass-500);
+  color: var(--mm-beige-50);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--mm-beige-50);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--mm-brass-500);
+  border-radius: 8px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-script {
+  /* `--font-script` is a Tailwind @theme-inline token, not a real inherited CSS
+     custom property, so referencing it directly here silently falls back to the
+     browser default font. Reference the actual next/font variable instead. */
+  font-family: var(--font-tangerine);
+}
+
+.tracking-widest2 {
+  letter-spacing: 0.35em;
+}
+
+.tracking-wide-lg {
+  letter-spacing: 0.14em;
+}
+
+.text-stroke-gold {
+  -webkit-text-stroke: 1px var(--mm-brass-500);
+  color: transparent;
+}
+
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* Always-legible frosted surface for the nav */
+.glass {
+  @apply backdrop-blur-xl;
+  background: var(--glass-surface);
+  border: 1px solid var(--glass-border);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes scan-sweep {
+  0% {
+    transform: translateX(-130%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}
+.animate-scan-sweep {
+  animation: scan-sweep 1s ease-in-out;
+}
+
+@keyframes scan-bar {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.animate-scan-bar {
+  animation: scan-bar 2.4s linear infinite;
+}
+
+@keyframes flash-in-out {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(217, 185, 120, 0.55);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.045);
+    box-shadow: 0 0 22px 7px rgba(217, 185, 120, 0.85);
+  }
+}
+.animate-flash {
+  animation: flash-in-out 1.15s ease-in-out infinite;
+}

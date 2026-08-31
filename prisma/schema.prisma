@@ -1,0 +1,160 @@
+// Events By Marina — Event Planning & Design
+// Uses a hosted Postgres instance (Prisma Postgres, connected via Vercel Storage)
+// in both production and local dev — DATABASE_URL points at it in both places.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  STAFF
+}
+
+enum LeadSource {
+  WEBSITE_FORM
+  AI_CHAT
+  WHATSAPP
+}
+
+enum LeadStatus {
+  NEW
+  QUALIFIED
+  HIGH_PRIORITY
+  CONSULTATION_BOOKED
+  PROPOSAL_SENT
+  WON
+  LOST
+}
+
+enum BookingStatus {
+  TENTATIVE
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}
+
+enum AppointmentStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      Role     @default(STAFF)
+  createdAt DateTime @default(now())
+}
+
+model Lead {
+  id          String     @id @default(cuid())
+  name        String
+  email       String?
+  phone       String?
+  eventType   String?
+  eventDate   DateTime?
+  guestCount  Int?
+  location    String?
+  budgetRange String?
+  message     String?
+  source      LeadSource @default(WEBSITE_FORM)
+  status      LeadStatus @default(NEW)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  chatLogs    ChatLog[]
+  booking     Booking?
+  appointments Appointment[]
+}
+
+model Appointment {
+  id        String            @id @default(cuid())
+  leadId    String
+  lead      Lead              @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  date      DateTime
+  duration  Int               @default(30)
+  status    AppointmentStatus @default(CONFIRMED)
+  notes     String?
+  createdAt DateTime          @default(now())
+  updatedAt DateTime          @updatedAt
+}
+
+model Booking {
+  id         String        @id @default(cuid())
+  leadId     String?       @unique
+  lead       Lead?         @relation(fields: [leadId], references: [id])
+  clientId   String?
+  client     Client?       @relation(fields: [clientId], references: [id])
+  eventName  String
+  eventType  String
+  eventDate  DateTime
+  location   String?
+  guestCount Int?
+  status     BookingStatus @default(CONFIRMED)
+  notes      String?
+  createdAt  DateTime      @default(now())
+}
+
+model Client {
+  id        String    @id @default(cuid())
+  name      String
+  email     String?
+  phone     String?
+  notes     String?
+  createdAt DateTime  @default(now())
+  bookings  Booking[]
+}
+
+model GalleryItem {
+  id        String   @id @default(cuid())
+  title     String
+  category  String
+  imageUrl  String
+  order     Int      @default(0)
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
+
+model ChatLog {
+  id        String   @id @default(cuid())
+  leadId    String?
+  lead      Lead?    @relation(fields: [leadId], references: [id])
+  sessionId String
+  role      String
+  content   String
+  flagged   Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model WhatsAppMessage {
+  id        String   @id @default(cuid())
+  waId      String
+  fromName  String?
+  direction String
+  body      String
+  createdAt DateTime @default(now())
+}
+
+model AppSetting {
+  id    String @id @default(cuid())
+  key   String @unique
+  value String
+}
+
+model Testimonial {
+  id        String  @id @default(cuid())
+  name      String
+  eventType String
+  quote     String
+  rating    Int     @default(5)
+  imageUrl  String?
+  order     Int     @default(0)
+}
