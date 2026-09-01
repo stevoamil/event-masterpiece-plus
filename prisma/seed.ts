@@ -31,7 +31,6 @@ async function main() {
   const gallery = [
     { title: "Rosewood Garden Wedding", category: "Weddings", imageUrl: "/images/about-3.webp", order: 1 },
     { title: "Skyline Corporate Gala", category: "Corporate Events", imageUrl: "/images/about-4.webp", order: 2 },
-    { title: "Amber Hour Anniversary", category: "Anniversaries", imageUrl: "/images/about-1.png", order: 3 },
     { title: "Hillside Villa Soirée", category: "Private Parties", imageUrl: "/images/about-2.png", order: 4 },
     { title: "Petal & Lace Baby Shower", category: "Baby Showers", imageUrl: "/images/about-3.webp", order: 5 },
     { title: "Moonlit Vow Renewal", category: "Weddings", imageUrl: "/images/about-4.webp", order: 6 },
