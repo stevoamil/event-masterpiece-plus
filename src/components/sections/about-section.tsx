@@ -29,7 +29,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-xs font-medium uppercase tracking-widest2 text-brass-500"
+            className="block font-display text-2xl italic text-brass-500"
           >
             {dict.about.kicker}
           </motion.span>
@@ -50,16 +50,6 @@ export default function AboutSection() {
             className="mt-6 max-w-xl text-[15px] leading-relaxed text-ink-900/70"
           >
             {dict.about.body}
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-8 font-display text-2xl italic text-brass-500"
-          >
-            {dict.about.quote}
           </motion.p>
 
           <div className="mt-12 grid grid-cols-3 gap-6 border-t border-ink-900/10 pt-8">
