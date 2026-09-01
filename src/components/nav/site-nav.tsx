@@ -98,7 +98,7 @@ export default function SiteNav() {
             className="flex items-center gap-1.5 text-xs font-medium uppercase tracking-widest2 text-ink-900/70 hover:text-brass-500"
           >
             <Globe className="h-3.5 w-3.5" />
-            {locale === "en" ? "FR" : "EN"}
+            {locale === "en" ? "ES" : "EN"}
           </button>
         </div>
 
