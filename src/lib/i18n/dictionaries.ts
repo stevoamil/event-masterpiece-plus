@@ -152,7 +152,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       stat2Label: "Years of Craft",
       stat3: "25+",
       stat3Label: "Cities / Destinations Served",
-      quote: '"We don\'t plan events. We compose experiences."',
+      quote: "The Studio",
     },
     services: {
       kicker: "What We Create",
@@ -292,7 +292,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       stat2Label: "Années d'expertise",
       stat3: "25+",
       stat3Label: "Villes / Destinations desservies",
-      quote: "« Nous ne planifions pas des événements. Nous composons des expériences. »",
+      quote: "Le Studio",
     },
     services: {
       kicker: "Ce Que Nous Créons",

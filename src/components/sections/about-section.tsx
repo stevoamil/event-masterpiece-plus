@@ -25,10 +25,19 @@ export default function AboutSection() {
       <div className="mx-auto grid max-w-[1400px] gap-16 px-6 sm:px-10 lg:grid-cols-2 lg:items-center lg:gap-24">
         <div className="order-2 lg:order-1">
           <motion.span
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="block font-display text-lg italic text-brass-500"
+          >
+            {dict.about.quote}
+          </motion.span>
+          <motion.span
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
             className="block font-display text-2xl italic text-brass-500"
           >
             {dict.about.kicker}
