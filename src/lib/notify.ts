@@ -34,7 +34,7 @@ export async function notifyAdminByEmail(lead: NotifyLead, appointment: NotifyAp
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Events By Marina Concierge <concierge@eventsbymarina.com>",
+        from: "Event Masterpiece Plus <concierge@eventmasterpieceplus.com>",
         to: admin.email,
         subject: `New consultation booked — ${lead.name}`,
         text: `${lead.name} just booked a consultation via the AI concierge.\n\nEvent type: ${lead.eventType ?? "Not specified"}\nDate/time: ${appointment.date.toLocaleString()}\nContact: ${lead.email ?? lead.phone ?? "—"}\n\nView it in the admin dashboard under Consultations.`,
@@ -58,7 +58,7 @@ export async function notifyCustomerByWhatsApp(lead: NotifyLead, appointment: No
     weekday: "long",
     month: "long",
     day: "numeric",
-  })} at ${appointment.date.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" })}.\n\nThank you for choosing Events By Marina. 🤍 We're delighted to be part of your journey and look forward to bringing your vision to life.`;
+  })} at ${appointment.date.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" })}.\n\nThank you for choosing Event Masterpiece Plus. 🤍 We're delighted to be part of your journey and look forward to bringing your vision to life.`;
 
   try {
     const res = await fetch(`https://graph.facebook.com/v21.0/${WHATSAPP_PHONE_NUMBER_ID}/messages`, {
@@ -76,7 +76,7 @@ export async function notifyCustomerByWhatsApp(lead: NotifyLead, appointment: No
     });
     if (res.ok) {
       await prisma.whatsAppMessage.create({
-        data: { waId: lead.phone, fromName: "Events By Marina", direction: "out", body: message },
+        data: { waId: lead.phone, fromName: "Event Masterpiece Plus", direction: "out", body: message },
       });
     }
   } catch (err) {

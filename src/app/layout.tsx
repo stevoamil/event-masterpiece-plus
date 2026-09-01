@@ -27,7 +27,7 @@ const tangerine = Tangerine({
 });
 
 export const metadata: Metadata = {
-  title: "Events By Marina — Event Planning & Design",
+  title: "Event Masterpiece Plus — Event Planning & Design",
   description:
     "Your vision, flawlessly brought to life. A premium event design studio crafting weddings, corporate galas, and private celebrations.",
 };

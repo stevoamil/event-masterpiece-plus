@@ -44,10 +44,10 @@ export default function Preloader({ onDone }: { onDone: () => void }) {
           <div className="flex flex-col items-center gap-6">
             <div className="flex flex-col items-center gap-2">
               <Image
-                src="/images/logo-events-by-marina.avif"
-                alt="Events By Marina"
-                width={197}
-                height={203}
+                src="/images/logo-emp-white.png"
+                alt="Event Masterpiece Plus"
+                width={963}
+                height={718}
                 priority
                 className="h-36 w-auto sm:h-44"
                 style={{

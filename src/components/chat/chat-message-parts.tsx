@@ -157,7 +157,7 @@ export function BookingConfirmationCard({ date, time }: { date: string; time: st
       </div>
       <p className="mt-3 text-base font-medium text-ink-900">Your consultation is confirmed ✨</p>
       <p className="mt-1 text-sm text-ink-700/70">{formatted}</p>
-      <p className="mt-2 text-sm text-ink-700/60">Thank you for choosing Events By Marina. 🤍</p>
+      <p className="mt-2 text-sm text-ink-700/60">Thank you for choosing Event Masterpiece Plus. 🤍</p>
     </div>
   );
 }

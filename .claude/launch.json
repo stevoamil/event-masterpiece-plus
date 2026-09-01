@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "events-by-marina",
+      "name": "event-masterpiece-plus",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "C:\\Users\\MC\\Desktop\\Events By Marina", "run", "dev", "--", "--port", "3003"],
+      "runtimeArgs": ["--prefix", "C:\\Users\\MC\\Desktop\\Event Masterpiece Plus", "run", "dev", "--", "--port", "3003"],
       "port": 3003
     }
   ]

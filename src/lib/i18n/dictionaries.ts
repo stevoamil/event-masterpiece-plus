@@ -140,13 +140,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
       title2: "Beautifully Told.",
       subtitle: "Your Vision, Flawlessly Brought to Life",
       cta1: "Start Planning",
-      cta2: "Ask Marina's Assistant",
+      cta2: "Ask Our Assistant",
       scroll: "Scroll to explore",
     },
     about: {
       kicker: "We don't plan events. We compose experiences",
       title: "A decade of crafting unforgettable days",
-      body: "I'm an event designer and planner with a love for atmosphere, styling, and the small details that make a celebration unforgettable. From intimate gatherings to grand affairs, I bring creativity, warmth, and precision to every event I design.",
+      body: "We're a team of event designers and planners with a love for atmosphere, styling, and the small details that make a celebration unforgettable. From intimate gatherings to grand affairs, we bring creativity, warmth, and precision to every event we design.",
       stat1: "150+",
       stat1Label: "Events Designed",
       stat2: "10",
@@ -187,9 +187,9 @@ export const dictionaries: Record<Locale, Dictionary> = {
       kicker: "Kind Words",
       title: "Loved by our clients",
       items: [
-        { name: "Camille & Antoine", role: "Wedding, Château de Vaux", quote: "Marina and her team turned our wedding into something out of a dream. Every detail felt like us, elevated." },
-        { name: "Sophie Laurent", role: "CEO, Laurent & Co.", quote: "Our product launch was flawless. Guests are still talking about the atmosphere she created." },
-        { name: "Yasmine B.", role: "Baby Shower, Cannes", quote: "So soft, so joyful, so effortless — for us at least. Marina handled every single detail." },
+        { name: "Camille & Antoine", role: "Wedding, Wilmington, DE", quote: "The Event Masterpiece Plus team turned our wedding into something out of a dream. Every detail felt like us, elevated." },
+        { name: "Sophie Laurent", role: "CEO, Laurent & Co.", quote: "Our product launch was flawless. Guests are still talking about the atmosphere they created." },
+        { name: "Yasmine B.", role: "Baby Shower, Philadelphia, PA", quote: "So soft, so joyful, so effortless — for us at least. The team handled every single detail." },
         { name: "Elise & Marc", role: "30th Anniversary", quote: "A celebration as elegant and enduring as our marriage. We are endlessly grateful." },
       ],
     },
@@ -223,12 +223,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
       admin: "Studio Login",
     },
     chat: {
-      cta: "Ask Marina — Your AI Event Planner",
-      title: "Ask Marina",
+      cta: "Ask EMP — Your AI Event Planner",
+      title: "Ask EMP",
       subtitle: "Your AI Event Planner",
       placeholder: "Type your message…",
       greeting:
-        "Hello ✨ I'm Marina's assistant, here to help you plan your event. I can help you explore our services, discover inspiration, answer your questions, or book a consultation with our team. What are you planning?",
+        "Hello ✨ I'm the Event Masterpiece Plus assistant, here to help you plan your event. I can help you explore our services, discover inspiration, answer your questions, or book a consultation with our team. What are you planning?",
       quickActions: {
         planEvent: "Plan My Event",
         exploreServices: "Explore Services",
@@ -263,7 +263,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       defaultReply: "I'm here to help — could you tell me more about your event?",
       alreadyPendingSlot: "You've already picked {date} at {time} ✨ Just share your name, email, and phone number above to lock it in!",
     },
-    whatsappMessage: "Hi Events By Marina, I'd like to inquire about an event.",
+    whatsappMessage: "Hi Event Masterpiece Plus, I'd like to inquire about an event.",
   },
   fr: {
     nav: {
@@ -281,13 +281,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
       title2: "Magnifiquement Raconté.",
       subtitle: "Votre vision, réalisée à la perfection",
       cta1: "Commencer",
-      cta2: "Demander à l'assistante de Marina",
+      cta2: "Demander à notre assistante",
       scroll: "Faites défiler",
     },
     about: {
       kicker: "Nous ne planifions pas des événements. Nous composons des expériences",
       title: "Une décennie à créer des jours inoubliables",
-      body: "Je suis designer et organisatrice d'événements, passionnée par l'ambiance, le style et les petits détails qui rendent une célébration inoubliable. Des rassemblements intimes aux grandes réceptions, j'apporte créativité, chaleur et précision à chaque événement que je conçois.",
+      body: "Nous sommes une équipe de designers et organisateurs d'événements, passionnés par l'ambiance, le style et les petits détails qui rendent une célébration inoubliable. Des rassemblements intimes aux grandes réceptions, nous apportons créativité, chaleur et précision à chaque événement que nous concevons.",
       stat1: "150+",
       stat1Label: "Événements conçus",
       stat2: "10",
@@ -328,9 +328,9 @@ export const dictionaries: Record<Locale, Dictionary> = {
       kicker: "Ils Nous Font Confiance",
       title: "Adoré par nos clients",
       items: [
-        { name: "Camille & Antoine", role: "Mariage, Château de Vaux", quote: "Marina et son équipe ont transformé notre mariage en un rêve. Chaque détail nous ressemblait, sublimé." },
+        { name: "Camille & Antoine", role: "Mariage, Wilmington, DE", quote: "L'équipe d'Event Masterpiece Plus a transformé notre mariage en un rêve. Chaque détail nous ressemblait, sublimé." },
         { name: "Sophie Laurent", role: "PDG, Laurent & Co.", quote: "Notre lancement produit était parfait. Nos invités parlent encore de l'ambiance créée." },
-        { name: "Yasmine B.", role: "Baby Shower, Cannes", quote: "Si doux, si joyeux, si simple — pour nous en tout cas. Marina a géré chaque détail." },
+        { name: "Yasmine B.", role: "Baby Shower, Philadelphie, PA", quote: "Si doux, si joyeux, si simple — pour nous en tout cas. L'équipe a géré chaque détail." },
         { name: "Elise & Marc", role: "30 ans de mariage", quote: "Une célébration aussi élégante et durable que notre union. Nous sommes infiniment reconnaissants." },
       ],
     },
@@ -364,12 +364,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
       admin: "Espace Studio",
     },
     chat: {
-      cta: "Demandez à Marina — Votre Planificatrice IA",
-      title: "Demandez à Marina",
+      cta: "Demandez à EMP — Votre Planificatrice IA",
+      title: "Demandez à EMP",
       subtitle: "Votre Planificatrice IA",
       placeholder: "Écrivez votre message…",
       greeting:
-        "Bonjour ✨ Je suis l'assistante de Marina, ici pour vous aider à planifier votre événement. Je peux vous aider à découvrir nos services, trouver de l'inspiration, répondre à vos questions ou réserver une consultation avec notre équipe. Que planifiez-vous ?",
+        "Bonjour ✨ Je suis l'assistante d'Event Masterpiece Plus, ici pour vous aider à planifier votre événement. Je peux vous aider à découvrir nos services, trouver de l'inspiration, répondre à vos questions ou réserver une consultation avec notre équipe. Que planifiez-vous ?",
       quickActions: {
         planEvent: "Planifier mon événement",
         exploreServices: "Découvrir nos services",
@@ -404,6 +404,6 @@ export const dictionaries: Record<Locale, Dictionary> = {
       defaultReply: "Je suis là pour vous aider — pouvez-vous m'en dire plus sur votre événement ?",
       alreadyPendingSlot: "Vous avez déjà choisi {date} à {time} ✨ Il ne vous reste qu'à indiquer votre nom, votre email et votre téléphone ci-dessus pour confirmer !",
     },
-    whatsappMessage: "Bonjour Events By Marina, je souhaite me renseigner sur un événement.",
+    whatsappMessage: "Bonjour Event Masterpiece Plus, je souhaite me renseigner sur un événement.",
   },
 } as const;

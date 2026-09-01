@@ -16,7 +16,7 @@ export async function generateMetadata({
   const service = getServiceBySlug(slug);
   if (!service) return {};
   return {
-    title: `${service.en.name} — Events By Marina`,
+    title: `${service.en.name} — Event Masterpiece Plus`,
     description: service.en.shortDesc,
   };
 }

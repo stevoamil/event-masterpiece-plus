@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
   }
 
   const record = await prisma.whatsAppMessage.create({
-    data: { waId: body.waId, fromName: "Events By Marina", direction: "out", body: body.message },
+    data: { waId: body.waId, fromName: "Event Masterpiece Plus", direction: "out", body: body.message },
   });
 
   return NextResponse.json({ ...record, delivered });

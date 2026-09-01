@@ -38,10 +38,10 @@ export default function AdminLoginPage() {
       <div className="w-full max-w-sm">
         <div className="mb-10 flex flex-col items-center text-center">
           <Image
-            src="/images/logo-events-by-marina.avif"
-            alt="Events By Marina"
-            width={197}
-            height={203}
+            src="/images/logo-emp-white.png"
+            alt="Event Masterpiece Plus"
+            width={963}
+            height={718}
             className="mb-4 h-20 w-auto"
           />
           <p className="mt-1 text-xs uppercase tracking-wide-lg text-beige-100/50">Admin Dashboard</p>
@@ -79,7 +79,7 @@ export default function AdminLoginPage() {
         </form>
 
         <p className="mt-6 text-center text-[11px] text-beige-100/30">
-          Demo: admin@eventsbymarina.com / EventsByMarina2026!
+          Demo: eventmasterpiece1977@gmail.com / EventMasterpiecePlus2026!
         </p>
       </div>
     </div>

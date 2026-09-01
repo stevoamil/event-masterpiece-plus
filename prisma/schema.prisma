@@ -1,4 +1,4 @@
-// Events By Marina — Event Planning & Design
+// Event Masterpiece Plus — Event Planning & Design
 // Uses a hosted Postgres instance (Prisma Postgres, connected via Vercel Storage)
 // in both production and local dev — DATABASE_URL points at it in both places.
 

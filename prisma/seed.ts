@@ -4,13 +4,13 @@ import bcrypt from "bcryptjs";
 const prisma = new PrismaClient();
 
 async function main() {
-  const adminPassword = await bcrypt.hash("EventsByMarina2026!", 10);
+  const adminPassword = await bcrypt.hash("EventMasterpiecePlus2026!", 10);
   await prisma.user.upsert({
-    where: { email: "admin@eventsbymarina.com" },
+    where: { email: "eventmasterpiece1977@gmail.com" },
     update: {},
     create: {
-      name: "Events By Marina",
-      email: "admin@eventsbymarina.com",
+      name: "Event Masterpiece Plus",
+      email: "eventmasterpiece1977@gmail.com",
       password: adminPassword,
       role: "ADMIN",
     },
@@ -18,11 +18,11 @@ async function main() {
 
   const staffPassword = await bcrypt.hash("Staff2026!", 10);
   await prisma.user.upsert({
-    where: { email: "staff@eventsbymarina.com" },
+    where: { email: "staff@eventmasterpieceplus.com" },
     update: {},
     create: {
       name: "Jordan Blake",
-      email: "staff@eventsbymarina.com",
+      email: "staff@eventmasterpieceplus.com",
       password: staffPassword,
       role: "STAFF",
     },
@@ -45,7 +45,7 @@ async function main() {
   }
 
   const testimonials = [
-    { name: "Ava & Noah", eventType: "Wedding", quote: "Marina brought our vision to life beyond what we imagined — every detail was perfect.", rating: 5, order: 1 },
+    { name: "Ava & Noah", eventType: "Wedding", quote: "The team brought our vision to life beyond what we imagined — every detail was perfect.", rating: 5, order: 1 },
     { name: "Daniela Reyes", eventType: "Corporate Gala", quote: "Seamless from start to finish. Our guests are still talking about it.", rating: 5, order: 2 },
     { name: "The Whitfield Family", eventType: "Anniversary", quote: "Warm, elegant, and effortless — exactly what we hoped for.", rating: 5, order: 3 },
   ];
@@ -67,7 +67,7 @@ async function main() {
   const leads = [
     { name: "Ava Bennett", email: "ava.b@example.com", phone: "+1 415 555 0132", eventType: "Wedding", guestCount: 120, budgetRange: "$30k–$50k", status: "CONSULTATION_BOOKED" as const, source: "WEBSITE_FORM" as const, message: "Looking for a spring wedding near Napa Valley." },
     { name: "Marcus Ellison", email: "marcus.e@example.com", phone: "+1 646 555 0143", eventType: "Corporate Event", guestCount: 300, budgetRange: "$50k+", status: "PROPOSAL_SENT" as const, source: "AI_CHAT" as const, message: "Annual gala for 300 guests, need AV and stage design." },
-    { name: "Priya Shah", email: "priya.s@example.com", phone: "+1 312 555 0198", eventType: "Baby Shower", guestCount: 25, budgetRange: "$5k–$10k", status: "NEW" as const, source: "WHATSAPP" as const, message: "Hi Events By Marina, I'd like to inquire about an event." },
+    { name: "Priya Shah", email: "priya.s@example.com", phone: "+1 312 555 0198", eventType: "Baby Shower", guestCount: 25, budgetRange: "$5k–$10k", status: "NEW" as const, source: "WHATSAPP" as const, message: "Hi Event Masterpiece Plus, I'd like to inquire about an event." },
     { name: "Tyler Simmons", email: "tyler.s@example.com", phone: "+1 305 555 0176", eventType: "Private Party", guestCount: 60, budgetRange: "$10k–$20k", status: "QUALIFIED" as const, source: "WEBSITE_FORM" as const, message: "40th birthday, looking for a rooftop venue." },
     { name: "Daniela Reyes", email: "daniela.reyes@example.com", phone: "+1 212 555 0187", eventType: "Corporate Event", guestCount: 150, budgetRange: "$30k–$50k", status: "WON" as const, source: "WEBSITE_FORM" as const, message: "Board gala, completed last quarter." },
   ];
@@ -103,8 +103,8 @@ async function main() {
   const priyaLead = createdLeads[2];
   const chatSession = "seed-session-1";
   const chatSeed = [
-    { role: "assistant", content: "Hi there! I'm the Events By Marina concierge. How can I help you plan your event?" },
-    { role: "user", content: "Hi Events By Marina, I'd like to inquire about an event." },
+    { role: "assistant", content: "Hi there! I'm the Event Masterpiece Plus concierge. How can I help you plan your event?" },
+    { role: "user", content: "Hi Event Masterpiece Plus, I'd like to inquire about an event." },
     { role: "assistant", content: "Wonderful! What type of event are you planning, and roughly how many guests?" },
     { role: "user", content: "A baby shower for about 25 people, sometime in June." },
   ];
@@ -116,7 +116,7 @@ async function main() {
   }
 
   const waSeed = [
-    { waId: "14155550198", fromName: "Priya Shah", direction: "in", body: "Hi Events By Marina, I'd like to inquire about an event." },
+    { waId: "14155550198", fromName: "Priya Shah", direction: "in", body: "Hi Event Masterpiece Plus, I'd like to inquire about an event." },
     { waId: "14155550198", fromName: "Priya Shah", direction: "out", body: "Hi Priya! Happy to help — could you share your event date and guest count?" },
   ];
   for (const w of waSeed) {

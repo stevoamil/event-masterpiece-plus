@@ -9,8 +9,8 @@ import { useLocale } from "@/lib/i18n/locale-context";
 
 const sectionIds = ["services", "portfolio", "process", "testimonials", "contact"] as const;
 
-const PHONE_DISPLAY = "+1 951 870 8863";
-const PHONE_HREF = "tel:+19518708863";
+const PHONE_DISPLAY = "+1 302 500-9067";
+const PHONE_HREF = "tel:+13025009067";
 
 export default function SiteNav() {
   const { locale, setLocale, dict } = useLocale();
@@ -61,10 +61,10 @@ export default function SiteNav() {
           }}
         >
           <Image
-            src="/images/logo-events-by-marina-black.png"
-            alt="Events By Marina"
-            width={197}
-            height={203}
+            src="/images/logo-emp-transparent.png"
+            alt="Event Masterpiece Plus"
+            width={963}
+            height={718}
             priority
             className="h-14 w-auto sm:h-16"
           />
@@ -118,10 +118,10 @@ export default function SiteNav() {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
                 <Image
-                  src="/images/logo-events-by-marina-black.png"
-                  alt="Events By Marina"
-                  width={197}
-                  height={203}
+                  src="/images/logo-emp-transparent.png"
+                  alt="Event Masterpiece Plus"
+                  width={963}
+                  height={718}
                   className="h-14 w-auto"
                 />
               </div>

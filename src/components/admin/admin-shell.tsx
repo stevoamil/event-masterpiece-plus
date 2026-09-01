@@ -55,10 +55,10 @@ export default function AdminShell({
     <div className="flex h-full flex-col">
       <div className="flex flex-col items-start gap-1 px-5 py-6">
         <Image
-          src="/images/logo-events-by-marina-black.png"
-          alt="Events By Marina"
-          width={197}
-          height={203}
+          src="/images/logo-emp-transparent.png"
+          alt="Event Masterpiece Plus"
+          width={963}
+          height={718}
           className="h-11 w-auto"
         />
         <p className="text-[10px] uppercase tracking-wide text-ink-700/50">Admin</p>
@@ -114,7 +114,7 @@ export default function AdminShell({
 
       <div className="flex min-w-0 flex-1 flex-col">
         <header className="flex items-center justify-between border-b border-ink-900/10 bg-beige-50 px-5 py-3 lg:hidden">
-          <span className="font-display text-sm italic">Events By Marina Admin</span>
+          <span className="font-display text-sm italic">Event Masterpiece Plus Admin</span>
           <button onClick={() => setMobileOpen((v) => !v)} aria-label="Menu">
             {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
