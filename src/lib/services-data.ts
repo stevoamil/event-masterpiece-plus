@@ -4,7 +4,7 @@ export interface ServiceCategory {
   slug: string;
   image: string;
   en: { name: string; shortDesc: string; longDesc: string };
-  fr: { name: string; shortDesc: string; longDesc: string };
+  es: { name: string; shortDesc: string; longDesc: string };
 }
 
 export const serviceCategories: ServiceCategory[] = [
@@ -17,11 +17,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "From an intimate elopement to a full château celebration, we handle every layer of your wedding — concept, florals, lighting, tablescapes, vendor coordination and day-of execution — so all you have to do is show up and enjoy it.",
     },
-    fr: {
-      name: "Mariages",
-      shortDesc: "Conception et coordination de bout en bout pour le jour le plus important de votre calendrier.",
+    es: {
+      name: "Bodas",
+      shortDesc: "Diseño y coordinación integral para el día más importante de tu calendario.",
       longDesc:
-        "D'un élopement intime à une grande réception de château, nous prenons en charge chaque couche de votre mariage — concept, fleurs, lumière, art de la table, coordination des prestataires et exécution le jour J — pour que vous n'ayez plus qu'à profiter de l'instant.",
+        "De una fuga íntima a una gran celebración en un castillo, nos encargamos de cada capa de tu boda — concepto, flores, iluminación, montaje de mesas, coordinación de proveedores y ejecución el día del evento — para que solo tengas que llegar y disfrutar.",
     },
   },
   {
@@ -33,11 +33,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "From a private proposal setting to a lively engagement party, we shape the atmosphere, the details and the timing — giving this first milestone the same care as the wedding still to come.",
     },
-    fr: {
-      name: "Fiançailles",
-      shortDesc: "Des moments pensés avec soin pour ouvrir le prochain chapitre de votre histoire.",
+    es: {
+      name: "Compromisos",
+      shortDesc: "Momentos diseñados con cuidado para abrir el próximo capítulo de tu historia.",
       longDesc:
-        "D'une mise en scène de demande en mariage privée à une fête de fiançailles animée, nous façonnons l'ambiance, les détails et le timing — pour que ce premier jalon reçoive autant d'attention que le mariage à venir.",
+        "Desde un escenario de propuesta privada hasta una animada fiesta de compromiso, damos forma al ambiente, los detalles y el tiempo — dándole a este primer hito el mismo cuidado que la boda que aún vendrá.",
     },
   },
   {
@@ -49,11 +49,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "From bridal showers to bachelorette weekends, we style each celebration around the bride-to-be with soft florals, considered tablescapes and a warmth that fits the occasion.",
     },
-    fr: {
-      name: "Événements de Mariée",
-      shortDesc: "Douches nuptiales, célébrations de départ et tous les rassemblements pensés pour la mariée.",
+    es: {
+      name: "Eventos de Novia",
+      shortDesc: "Showers, despedidas y cada reunión pensada alrededor de la novia.",
       longDesc:
-        "Des douches nuptiales aux week-ends d'enterrement de vie de jeune fille, nous stylons chaque célébration autour de la future mariée avec des fleurs délicates, un art de la table soigné et une chaleur adaptée à l'occasion.",
+        "De los showers nupciales a los fines de semana de despedida de soltera, estilizamos cada celebración alrededor de la futura novia con flores suaves, montajes de mesa cuidados y una calidez acorde a la ocasión.",
     },
   },
   {
@@ -65,11 +65,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "Reunions, milestone celebrations and multi-generational get-togethers — we design events that give everyone, from grandparents to the youngest cousins, a beautiful reason to gather.",
     },
-    fr: {
-      name: "Événements Familiaux",
-      shortDesc: "Des rassemblements qui réunissent les générations autour d'une même table.",
+    es: {
+      name: "Eventos Familiares",
+      shortDesc: "Reuniones que unen generaciones alrededor de una misma mesa.",
       longDesc:
-        "Réunions de famille, célébrations marquantes et retrouvailles intergénérationnelles — nous concevons des événements qui donnent à chacun, des grands-parents aux plus jeunes cousins, une belle raison de se retrouver.",
+        "Reuniones familiares, celebraciones importantes y encuentros multigeneracionales — diseñamos eventos que le dan a todos, desde los abuelos hasta los primos más pequeños, una hermosa razón para reunirse.",
     },
   },
   {
@@ -81,11 +81,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "A children's party deserves the same craft as any other celebration. We design tasteful themes, charming details and an atmosphere that keeps kids and parents equally delighted.",
     },
-    fr: {
-      name: "Anniversaires Enfants",
-      shortDesc: "Des fêtes pleines d'imagination, joliment stylées, pensées pour les tout-petits.",
+    es: {
+      name: "Cumpleaños Infantiles",
+      shortDesc: "Fiestas imaginativas y bellamente estilizadas, pensadas para los más pequeños.",
       longDesc:
-        "Une fête d'enfant mérite le même savoir-faire que toute autre célébration. Nous concevons des thèmes raffinés, des détails charmants et une ambiance qui ravit petits et grands.",
+        "Una fiesta infantil merece el mismo cuidado que cualquier otra celebración. Diseñamos temáticas elegantes, detalles encantadores y un ambiente que deleita por igual a niños y padres.",
     },
   },
   {
@@ -97,11 +97,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "For private dinners, milestone toasts and small gatherings, we craft the full sensory experience — tablescape, lighting, florals and pacing — so every course feels part of one considered evening.",
     },
-    fr: {
-      name: "Dîners de Luxe",
-      shortDesc: "Des dîners aux chandelles construits autour d'un art de la table d'exception.",
+    es: {
+      name: "Cenas de Lujo",
+      shortDesc: "Momentos gastronómicos a la luz de las velas, construidos alrededor de un diseño de mesa excepcional.",
       longDesc:
-        "Pour les dîners privés, les toasts marquants et les petits rassemblements, nous créons l'expérience sensorielle complète — art de la table, lumière, fleurs et rythme — pour que chaque service s'inscrive dans une soirée pensée dans son ensemble.",
+        "Para cenas privadas, brindis memorables y pequeñas reuniones, creamos la experiencia sensorial completa — montaje de mesa, iluminación, flores y ritmo — para que cada plato forme parte de una velada cuidadosamente pensada.",
     },
   },
   {
@@ -113,11 +113,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "We design product launches and brand activations that carry your identity with precision — from concept and staging through to guest experience — so your moment makes exactly the impact you intended.",
     },
-    fr: {
-      name: "Lancements de Produits",
-      shortDesc: "Des événements de lancement pensés pour faire vivre votre marque avec impact.",
+    es: {
+      name: "Lanzamientos de Producto",
+      shortDesc: "Eventos de lanzamiento diseñados para que el momento de tu marca aterrice a la perfección.",
       longDesc:
-        "Nous concevons des lancements de produits et activations de marque qui portent votre identité avec précision — du concept à la scénographie jusqu'à l'expérience invité — pour que votre moment ait exactement l'impact recherché.",
+        "Diseñamos lanzamientos de producto y activaciones de marca que llevan tu identidad con precisión — desde el concepto y la escenografía hasta la experiencia del invitado — para que tu momento tenga exactamente el impacto que buscabas.",
     },
   },
   {
@@ -129,11 +129,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "From executive retreats to company galas, we manage the full production — venue, design, logistics and vendor coordination — so your event carries your brand with the polish it deserves.",
     },
-    fr: {
-      name: "Événements d'Entreprise",
-      shortDesc: "Galas, séminaires et lancements produits avec un fini parfaitement à l'image de votre marque.",
+    es: {
+      name: "Eventos Corporativos",
+      shortDesc: "Galas, retiros y lanzamientos producidos con un acabado perfecto para tu marca.",
       longDesc:
-        "Des séminaires exécutifs aux galas d'entreprise, nous gérons la production complète — lieu, design, logistique et coordination des prestataires — pour que votre événement porte votre marque avec tout le raffinement qu'elle mérite.",
+        "Desde retiros ejecutivos hasta galas corporativas, gestionamos la producción completa — sede, diseño, logística y coordinación de proveedores — para que tu evento lleve tu marca con el refinamiento que merece.",
     },
   },
   {
@@ -145,11 +145,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "Milestone birthdays, private soirées and personal celebrations of every kind — each one designed around you and your guests, with the same craft we bring to our largest productions.",
     },
-    fr: {
-      name: "Événements Privés",
-      shortDesc: "Des célébrations marquantes et des soirées intimes conçues autour de vous.",
+    es: {
+      name: "Eventos Privados",
+      shortDesc: "Celebraciones importantes y veladas íntimas diseñadas alrededor de ti.",
       longDesc:
-        "Anniversaires marquants, soirées privées et célébrations personnelles de toute nature — chacune conçue autour de vous et de vos invités, avec le même savoir-faire que nos plus grandes productions.",
+        "Cumpleaños importantes, veladas privadas y celebraciones personales de todo tipo — cada una diseñada alrededor de ti y tus invitados, con el mismo cuidado que aportamos a nuestras producciones más grandes.",
     },
   },
   {
@@ -161,11 +161,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "We style baby showers with a soft, joyful touch — tender palettes, delicate florals and thoughtful details that celebrate this new chapter with comfort and warmth.",
     },
-    fr: {
+    es: {
       name: "Baby Showers",
-      shortDesc: "Des célébrations douces et joyeuses, stylées jusque dans les moindres détails.",
+      shortDesc: "Celebraciones suaves y alegres, estilizadas hasta el más mínimo detalle.",
       longDesc:
-        "Nous stylons les baby showers avec une touche douce et joyeuse — palettes tendres, fleurs délicates et détails pensés pour célébrer ce nouveau chapitre dans le confort et la chaleur.",
+        "Estilizamos los baby showers con un toque suave y alegre — paletas tiernas, flores delicadas y detalles cuidados que celebran este nuevo capítulo con comodidad y calidez.",
     },
   },
   {
@@ -177,11 +177,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "For black-tie galas and large-scale luxury events, we bring together dramatic florals, considered lighting and flawless production for an evening your guests will keep talking about.",
     },
-    fr: {
-      name: "Galas & Événements de Luxe",
-      shortDesc: "Des soirées de gala grandioses, en tenue de soirée, pensées pour marquer les esprits.",
+    es: {
+      name: "Galas y Eventos de Lujo",
+      shortDesc: "Veladas de gala a gran escala, de etiqueta, diseñadas para ser inolvidables.",
       longDesc:
-        "Pour les galas en tenue de soirée et les événements de luxe à grande échelle, nous réunissons fleurs spectaculaires, éclairage soigné et production sans faille pour une soirée dont vos invités se souviendront longtemps.",
+        "Para galas de etiqueta y eventos de lujo a gran escala, reunimos flores dramáticas, iluminación cuidada y una producción impecable para una velada de la que tus invitados seguirán hablando.",
     },
   },
   {
@@ -193,11 +193,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "Our styling and décor service covers florals, table design, lighting and every visual layer in between — a fully bespoke design pass you can add to any celebration, large or small.",
     },
-    fr: {
-      name: "Styling & Décoration",
-      shortDesc: "Fleurs, lumière et art de la table sur-mesure, ajoutés à n'importe quel événement.",
+    es: {
+      name: "Estilismo y Decoración",
+      shortDesc: "Flores, iluminación y diseño de mesa a medida, aplicados a cualquier evento.",
       longDesc:
-        "Notre service de styling et décoration couvre les fleurs, l'art de la table, la lumière et chaque couche visuelle entre les deux — une passe de design entièrement sur-mesure que vous pouvez ajouter à toute célébration, petite ou grande.",
+        "Nuestro servicio de estilismo y decoración cubre flores, diseño de mesa, iluminación y cada capa visual intermedia — un diseño completamente a medida que puedes añadir a cualquier celebración, grande o pequeña.",
     },
   },
   {
@@ -209,11 +209,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "We source and coordinate live music, performers and curated entertainment that match the tone of your event precisely — building a programme that keeps guests engaged from the first toast to the last dance.",
     },
-    fr: {
-      name: "Animation d'Événement",
-      shortDesc: "Musique live, artistes et animations sélectionnés pour votre événement.",
+    es: {
+      name: "Entretenimiento para Eventos",
+      shortDesc: "Música en vivo, artistas y entretenimiento seleccionados para tu evento.",
       longDesc:
-        "Nous sélectionnons et coordonnons musique live, artistes et animations qui correspondent précisément au ton de votre événement — en construisant une programmation qui garde vos invités engagés du premier toast à la dernière danse.",
+        "Buscamos y coordinamos música en vivo, artistas y entretenimiento seleccionado que se ajusta con precisión al tono de tu evento — construyendo un programa que mantiene a los invitados comprometidos desde el primer brindis hasta el último baile.",
     },
   },
   {
@@ -225,11 +225,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "Staging, sound, lighting, rigging and on-site logistics — our production team runs the technical backbone of your event so nothing is left to chance on the day.",
     },
-    fr: {
-      name: "Production d'Événement",
-      shortDesc: "Production technique et logistique complète, gérée du début à la fin.",
+    es: {
+      name: "Producción de Eventos",
+      shortDesc: "Producción técnica y logística completa, gestionada de principio a fin.",
       longDesc:
-        "Scénographie, son, lumière, rigging et logistique sur site — notre équipe de production gère l'ossature technique de votre événement pour que rien ne soit laissé au hasard le jour J.",
+        "Escenografía, sonido, iluminación, rigging y logística en sitio — nuestro equipo de producción maneja la columna vertebral técnica de tu evento para que nada se deje al azar el día del evento.",
     },
   },
   {
@@ -241,11 +241,11 @@ export const serviceCategories: ServiceCategory[] = [
       longDesc:
         "Whether it's a first year or a fiftieth, we design anniversary celebrations that honour the years behind you with a warmth and elegance as enduring as the milestone itself.",
     },
-    fr: {
-      name: "Anniversaires de Mariage",
-      shortDesc: "Des célébrations aussi durables et élégantes que les années qu'elles célèbrent.",
+    es: {
+      name: "Aniversarios de Boda",
+      shortDesc: "Celebraciones tan duraderas y elegantes como los años que honran.",
       longDesc:
-        "Qu'il s'agisse d'une première année ou d'un cinquantième anniversaire, nous concevons des célébrations qui honorent les années passées avec une chaleur et une élégance aussi durables que l'événement lui-même.",
+        "Ya sea un primer año o un quincuagésimo aniversario, diseñamos celebraciones que honran los años vividos con una calidez y elegancia tan duraderas como el hito mismo.",
     },
   },
 ];

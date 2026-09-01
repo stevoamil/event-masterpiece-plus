@@ -20,7 +20,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
     // mismatch — this is a deliberate exception to react-hooks/set-state-in-effect.
     const stored = window.localStorage.getItem("mm_locale");
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (stored === "en" || stored === "fr") setLocaleState(stored);
+    if (stored === "en" || stored === "es") setLocaleState(stored);
   }, []);
 
   const setLocale = (next: Locale) => {

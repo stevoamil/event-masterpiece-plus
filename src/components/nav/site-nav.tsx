@@ -41,7 +41,7 @@ export default function SiteNav() {
   }
 
   function toggleLang() {
-    setLocale(locale === "en" ? "fr" : "en");
+    setLocale(locale === "en" ? "es" : "en");
   }
 
   return (
@@ -145,7 +145,7 @@ export default function SiteNav() {
                 <Phone className="h-4 w-4" /> {PHONE_DISPLAY}
               </a>
               <button onClick={toggleLang} className="flex items-center gap-2 text-sm uppercase tracking-widest2 text-beige-50/70">
-                <Globe className="h-4 w-4" /> {locale === "en" ? "Français" : "English"}
+                <Globe className="h-4 w-4" /> {locale === "en" ? "Español" : "English"}
               </button>
             </div>
           </motion.div>

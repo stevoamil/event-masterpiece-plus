@@ -363,7 +363,7 @@ export async function POST(req: NextRequest) {
   const sessionId: string | undefined = body?.sessionId;
   const message: string | undefined = body?.message;
   const history: ChatMessage[] = Array.isArray(body?.history) ? body.history : [];
-  const locale: Locale = body?.locale === "fr" ? "fr" : "en";
+  const locale: Locale = body?.locale === "es" ? "es" : "en";
   const clientLeadId: string | undefined = typeof body?.leadId === "string" ? body.leadId : undefined;
   const pendingSlot: { date: string; time: string } | undefined =
     typeof body?.pendingSlot?.date === "string" && typeof body?.pendingSlot?.time === "string"
@@ -390,9 +390,9 @@ export async function POST(req: NextRequest) {
   }
   system += `\n\nTODAY'S DATE is ${new Date().toISOString().slice(0, 10)} — use this as your reference point for any relative date reasoning.`;
   system += `\n\nLANGUAGE: The visitor's site language is currently set to ${
-    locale === "fr" ? "French" : "English"
+    locale === "es" ? "Spanish" : "English"
   }. Reply entirely in ${
-    locale === "fr" ? "French" : "English"
+    locale === "es" ? "Spanish" : "English"
   } — every word, with no mixing of the other language — regardless of what language the visitor types in.`;
 
   let reply: string;

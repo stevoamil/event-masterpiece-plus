@@ -136,7 +136,7 @@ export default function ChatWidget() {
     if (!Recognition) return;
 
     const recognition = new Recognition();
-    recognition.lang = locale === "fr" ? "fr-FR" : "en-US";
+    recognition.lang = locale === "es" ? "es-ES" : "en-US";
     recognition.interimResults = true;
     recognition.continuous = false;
     recognition.onresult = (e) => {
