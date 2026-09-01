@@ -28,11 +28,13 @@ export default function ParticleMonogram({ progressRef }: { progressRef: React.M
     let dpr = Math.min(window.devicePixelRatio || 1, 2);
     let particles: Particle[] = [];
     let raf = 0;
+    let logoImg: HTMLImageElement | null = null;
+    let logoReady = false;
 
     function buildTargets() {
       // Guard against a zero-size container (e.g. layout not yet settled) —
       // getImageData throws IndexSizeError on a 0-width/height canvas.
-      if (width <= 0 || height <= 0) return [] as { x: number; y: number }[];
+      if (width <= 0 || height <= 0 || !logoReady || !logoImg) return [] as { x: number; y: number }[];
 
       const off = document.createElement("canvas");
       off.width = width;
@@ -40,23 +42,15 @@ export default function ParticleMonogram({ progressRef }: { progressRef: React.M
       const octx = off.getContext("2d");
       if (!octx) return [] as { x: number; y: number }[];
       octx.clearRect(0, 0, width, height);
-      octx.fillStyle = "#fff";
-      const isSmall = width < 700;
-      const fontSize = Math.min(width, height) * (isSmall ? 0.62 : 0.5);
-      octx.font = `italic 500 ${fontSize}px "Cormorant Garamond", serif`;
-      octx.textAlign = "center";
-      octx.textBaseline = "middle";
-      octx.fillText("M", width / 2, height / 2);
 
-      // small heart flourish under the M
-      const hx = width / 2 + fontSize * 0.34;
-      const hy = height / 2 + fontSize * 0.18;
-      const hs = fontSize * 0.09;
-      octx.beginPath();
-      octx.moveTo(hx, hy + hs * 0.3);
-      octx.bezierCurveTo(hx - hs, hy - hs * 0.6, hx - hs * 1.8, hy + hs * 0.5, hx, hy + hs * 1.6);
-      octx.bezierCurveTo(hx + hs * 1.8, hy + hs * 0.5, hx + hs, hy - hs * 0.6, hx, hy + hs * 0.3);
-      octx.fill();
+      // Fit the EMP mark within the canvas, preserving its aspect ratio.
+      const isSmall = width < 700;
+      const maxW = width * (isSmall ? 0.82 : 0.7);
+      const maxH = height * (isSmall ? 0.55 : 0.48);
+      const scale = Math.min(maxW / logoImg.naturalWidth, maxH / logoImg.naturalHeight);
+      const drawW = logoImg.naturalWidth * scale;
+      const drawH = logoImg.naturalHeight * scale;
+      octx.drawImage(logoImg, width / 2 - drawW / 2, height / 2 - drawH / 2, drawW, drawH);
 
       const data = octx.getImageData(0, 0, width, height).data;
       const points: { x: number; y: number }[] = [];
@@ -147,10 +141,19 @@ export default function ParticleMonogram({ progressRef }: { progressRef: React.M
       raf = requestAnimationFrame(loop);
     }
 
+    const img = new Image();
+    logoImg = img;
+    img.onload = () => {
+      logoReady = true;
+      init();
+    };
+    img.src = "/images/logo-emp-mark.png";
+
     init();
     if (particles.length === 0) {
       // Layout wasn't ready on first measure (e.g. fonts/canvas not yet
-      // sized) — retry once after paint instead of rendering nothing.
+      // sized), or the logo image hadn't loaded yet — retry once after
+      // paint instead of rendering nothing.
       requestAnimationFrame(() => init());
     }
     window.addEventListener("resize", resize);
