@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 // `||` (not `??`) so an empty-string env var — e.g. left blank in Vercel's dashboard
 // rather than fully unset — still falls back to the real number instead of producing
 // a numberless https://wa.me/ link.
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "10000000000";
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "19518708863";
 
 export function getWhatsAppUrl(message: string) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;

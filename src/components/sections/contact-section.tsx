@@ -86,7 +86,7 @@ export default function ContactSection() {
             <div className="grid gap-3 sm:grid-cols-3">
               <WhatsAppTile label={dict.contact.whatsapp} />
               <ContactTile icon={Mail} label={dict.contact.email} href="mailto:hello@eventsbymarina.com" />
-              <ContactTile icon={Phone} label={dict.contact.call} href="tel:+10000000000" />
+              <ContactTile icon={Phone} label={dict.contact.call} href="tel:+19518708863" />
             </div>
           </div>
         </div>

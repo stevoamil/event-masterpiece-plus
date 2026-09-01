@@ -9,8 +9,8 @@ import { useLocale } from "@/lib/i18n/locale-context";
 
 const sectionIds = ["services", "portfolio", "process", "testimonials", "contact"] as const;
 
-const PHONE_DISPLAY = "+1 000 000 0000";
-const PHONE_HREF = "tel:+10000000000";
+const PHONE_DISPLAY = "+1 951 870 8863";
+const PHONE_HREF = "tel:+19518708863";
 
 export default function SiteNav() {
   const { locale, setLocale, dict } = useLocale();

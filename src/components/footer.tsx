@@ -61,8 +61,8 @@ export default function Footer() {
               <a href="mailto:hello@eventsbymarina.com" data-cursor-hover className="flex items-center gap-2 hover:text-brass-500">
                 <Mail className="h-4 w-4" /> hello@eventsbymarina.com
               </a>
-              <a href="tel:+10000000000" data-cursor-hover className="flex items-center gap-2 hover:text-brass-500">
-                <Phone className="h-4 w-4" /> +1 000 000 0000
+              <a href="tel:+19518708863" data-cursor-hover className="flex items-center gap-2 hover:text-brass-500">
+                <Phone className="h-4 w-4" /> +1 951 870 8863
               </a>
               <span className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" /> USA · Available Worldwide
