@@ -83,7 +83,7 @@ export default function AboutSection() {
             style={{ y: imgY, rotate: imgRotate, scale: imgScale }}
             className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2rem] shadow-2xl shadow-black/20"
           >
-            <Image src="/images/about-1.png" alt="Events By Marina styling florals" fill sizes="(max-width: 1024px) 90vw, 40vw" className="object-cover" />
+            <Image src="/images/about-marina-portrait.webp" alt="Marina styling a reception table" fill sizes="(max-width: 1024px) 90vw, 40vw" className="object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
           </motion.div>
           <motion.div
@@ -93,7 +93,7 @@ export default function AboutSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="relative z-10 mx-auto -mt-16 w-4/5 max-w-xs overflow-hidden rounded-2xl border-4 border-beige-50 shadow-xl sm:-mt-20"
           >
-            <Image src="/images/about-4.webp" alt="Floral detail" width={800} height={640} className="aspect-[5/4] w-full object-cover" />
+            <Image src="/images/about-ballroom-reception.webp" alt="Elegant ballroom reception styling" width={800} height={640} className="aspect-[5/4] w-full object-cover" />
           </motion.div>
         </div>
       </div>

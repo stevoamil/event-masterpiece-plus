@@ -143,7 +143,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       scroll: "Scroll to explore",
     },
     about: {
-      kicker: "The Studio",
+      kicker: "We don't plan events. We compose experiences",
       title: "A decade of crafting unforgettable days",
       body: "I'm an event designer and planner with a love for atmosphere, styling, and the small details that make a celebration unforgettable. From intimate gatherings to grand affairs, I bring creativity, warmth, and precision to every event I design.",
       stat1: "150+",
@@ -283,7 +283,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       scroll: "Faites défiler",
     },
     about: {
-      kicker: "Le Studio",
+      kicker: "Nous ne planifions pas des événements. Nous composons des expériences",
       title: "Une décennie à créer des jours inoubliables",
       body: "Je suis designer et organisatrice d'événements, passionnée par l'ambiance, le style et les petits détails qui rendent une célébration inoubliable. Des rassemblements intimes aux grandes réceptions, j'apporte créativité, chaleur et précision à chaque événement que je conçois.",
       stat1: "150+",
