@@ -82,7 +82,7 @@ export default function AboutSection() {
             style={{ y: imgY, rotate: imgRotate, scale: imgScale }}
             className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2rem] shadow-2xl shadow-black/20"
           >
-            <Image src="/images/about-1.png" alt="Event Masterpiece Plus styling florals" fill sizes="(max-width: 1024px) 90vw, 40vw" className="object-cover" />
+            <Image src="/images/about-lady-emerald-gown.webp" alt="Event Masterpiece Plus client in an emerald gown" fill sizes="(max-width: 1024px) 90vw, 40vw" className="object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
           </motion.div>
           <motion.div
