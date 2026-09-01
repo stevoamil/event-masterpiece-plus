@@ -23,6 +23,21 @@ function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+function TikTokIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} {...props}>
+      <path d="M16 3v10.5a3.5 3.5 0 1 1-3.5-3.5" strokeLinecap="round" />
+      <path d="M16 3c0 2.5 2 4.5 4.5 4.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+const socialLinks = [
+  { Icon: InstagramIcon, href: "https://www.instagram.com/eventsby_marina/", label: "Instagram" },
+  { Icon: TikTokIcon, href: "https://www.tiktok.com/@events.by.marina", label: "TikTok" },
+  { Icon: FacebookIcon, href: "https://www.facebook.com/profile.php?id=61557619685304", label: "Facebook" },
+];
+
 export default function Footer() {
   const { dict } = useLocale();
 
@@ -42,10 +57,13 @@ export default function Footer() {
             </div>
             <p className="mt-4 max-w-xs text-sm text-ink-900/60">{dict.footer.tagline}</p>
             <div className="mt-6 flex gap-3">
-              {[InstagramIcon, FacebookIcon].map((Icon, i) => (
+              {socialLinks.map(({ Icon, href, label }) => (
                 <a
-                  key={i}
-                  href="#"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
                   data-cursor-hover
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-ink-900/15 text-ink-900 transition hover:border-brass-500 hover:text-brass-500"
                 >
