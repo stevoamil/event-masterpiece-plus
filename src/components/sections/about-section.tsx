@@ -92,7 +92,7 @@ export default function AboutSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="relative z-10 mx-auto -mt-16 w-4/5 max-w-xs overflow-hidden rounded-2xl border-4 border-beige-50 shadow-xl sm:-mt-20"
           >
-            <Image src="/images/about-ballroom-reception.webp" alt="Elegant ballroom reception styling" width={800} height={640} className="aspect-[5/4] w-full object-cover" />
+            <Image src="/images/about-throne-setup.webp" alt="Floral throne reception setup" width={800} height={640} className="aspect-[5/4] w-full object-cover" />
           </motion.div>
         </div>
       </div>
