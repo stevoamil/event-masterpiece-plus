@@ -109,6 +109,7 @@ export interface Dictionary {
     apiError: string;
     followUp: string;
     defaultReply: string;
+    alreadyPendingSlot: string;
   };
   whatsappMessage: string;
 }
@@ -260,6 +261,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         "I'm having trouble connecting right now. Please reach out via the contact form or WhatsApp and our team will follow up personally.",
       followUp: "Let me have our event team follow up on this personally — could you share the best way to reach you?",
       defaultReply: "I'm here to help — could you tell me more about your event?",
+      alreadyPendingSlot: "You've already picked {date} at {time} ✨ Just share your name, email, and phone number above to lock it in!",
     },
     whatsappMessage: "Hi Events By Marina, I'd like to inquire about an event.",
   },
@@ -400,6 +402,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         "J'ai un problème de connexion en ce moment. Merci de nous contacter via le formulaire ou WhatsApp — notre équipe vous répondra personnellement.",
       followUp: "Laissez notre équipe événementielle assurer le suivi personnellement — quel est le meilleur moyen de vous contacter ?",
       defaultReply: "Je suis là pour vous aider — pouvez-vous m'en dire plus sur votre événement ?",
+      alreadyPendingSlot: "Vous avez déjà choisi {date} à {time} ✨ Il ne vous reste qu'à indiquer votre nom, votre email et votre téléphone ci-dessus pour confirmer !",
     },
     whatsappMessage: "Bonjour Events By Marina, je souhaite me renseigner sur un événement.",
   },

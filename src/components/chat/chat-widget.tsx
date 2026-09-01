@@ -11,6 +11,8 @@ import {
   ServiceCards,
   SlotPicker,
   TypingIndicator,
+  formatSlotDate,
+  formatSlotTime,
   type Card,
 } from "./chat-message-parts";
 
@@ -224,6 +226,28 @@ export default function ChatWidget() {
     sendMessage(input);
   }
 
+  // If a slot is already picked and we're just waiting on contact info, clicking
+  // "Book a Consultation" again shouldn't re-trigger the AI's availability flow —
+  // small models tend to treat that literal phrase as a request to start over,
+  // offering fresh times instead of continuing the booking already in progress.
+  // Answer locally instead of round-tripping to the model.
+  function handleBookConsultationClick() {
+    if (pendingSlot) {
+      setMessages((m) => [
+        ...m,
+        {
+          from: "bot",
+          text: dict.chat.alreadyPendingSlot
+            .replace("{date}", formatSlotDate(pendingSlot.date))
+            .replace("{time}", formatSlotTime(pendingSlot.date, pendingSlot.time)),
+          time: timeNow(),
+        },
+      ]);
+      return;
+    }
+    sendMessage(dict.chat.quickActions.bookConsultation);
+  }
+
   return (
     <>
       {!open && (
@@ -370,7 +394,7 @@ export default function ChatWidget() {
                 <button
                   type="button"
                   data-cursor-hover
-                  onClick={() => sendMessage(dict.chat.quickActions.bookConsultation)}
+                  onClick={handleBookConsultationClick}
                   className="animate-flash mb-3 w-full rounded-full bg-ink-900 px-4 py-2.5 text-xs font-medium uppercase tracking-widest2 text-beige-50 transition hover:bg-brass-500 hover:text-ink-900"
                 >
                   {dict.chat.quickActions.bookConsultation}

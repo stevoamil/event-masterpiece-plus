@@ -68,10 +68,10 @@ export function PortfolioCards({ items }: { items: { id: string; title: string; 
   );
 }
 
-function formatSlotDate(dateStr: string) {
+export function formatSlotDate(dateStr: string) {
   return new Date(`${dateStr}T00:00:00`).toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
 }
-function formatSlotTime(dateStr: string, time: string) {
+export function formatSlotTime(dateStr: string, time: string) {
   const [h, m] = time.split(":").map(Number);
   const d = new Date(`${dateStr}T00:00:00`);
   d.setHours(h, m);
