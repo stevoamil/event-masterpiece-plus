@@ -367,14 +367,6 @@ export default function ChatWidget() {
               </div>
 
               <div className="border-t border-ink-900/10 px-5 pt-4">
-                <button
-                  type="button"
-                  data-cursor-hover
-                  onClick={() => sendMessage(dict.chat.quickActions.bookConsultation)}
-                  className="animate-flash mb-3 w-full rounded-full bg-ink-900 px-4 py-2.5 text-xs font-medium uppercase tracking-widest2 text-beige-50 transition hover:bg-brass-500 hover:text-ink-900"
-                >
-                  {dict.chat.quickActions.bookConsultation}
-                </button>
                 <div className="flex items-center gap-2 rounded-full border border-ink-900/15 bg-white py-2 pl-5 pr-2 transition focus-within:border-brass-500">
                   <input
                     value={input}
