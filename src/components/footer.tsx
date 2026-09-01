@@ -76,8 +76,8 @@ export default function Footer() {
           <div>
             <h4 className="text-xs font-medium uppercase tracking-widest2 text-ink-900/40">Contact</h4>
             <div className="mt-5 space-y-3 text-sm text-ink-900/70">
-              <a href="mailto:hello@eventsbymarina.com" data-cursor-hover className="flex items-center gap-2 hover:text-brass-500">
-                <Mail className="h-4 w-4" /> hello@eventsbymarina.com
+              <a href="mailto:Marina@EventsByMarina.com" data-cursor-hover className="flex items-center gap-2 hover:text-brass-500">
+                <Mail className="h-4 w-4" /> Marina@EventsByMarina.com
               </a>
               <a href="tel:+19518708863" data-cursor-hover className="flex items-center gap-2 hover:text-brass-500">
                 <Phone className="h-4 w-4" /> +1 951 870 8863
