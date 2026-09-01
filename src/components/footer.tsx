@@ -48,7 +48,7 @@ export default function Footer() {
           <div>
             <div className="inline-flex flex-col items-center">
               <Image
-                src="/images/logo-events-by-marina.avif"
+                src="/images/logo-events-by-marina-black.png"
                 alt="Events By Marina"
                 width={197}
                 height={203}

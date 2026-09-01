@@ -61,7 +61,7 @@ export default function SiteNav() {
           }}
         >
           <Image
-            src="/images/logo-events-by-marina.avif"
+            src="/images/logo-events-by-marina-black.png"
             alt="Events By Marina"
             width={197}
             height={203}
@@ -118,7 +118,7 @@ export default function SiteNav() {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
                 <Image
-                  src="/images/logo-events-by-marina.avif"
+                  src="/images/logo-events-by-marina-black.png"
                   alt="Events By Marina"
                   width={197}
                   height={203}

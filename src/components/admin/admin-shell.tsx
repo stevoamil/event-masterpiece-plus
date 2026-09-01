@@ -55,7 +55,7 @@ export default function AdminShell({
     <div className="flex h-full flex-col">
       <div className="flex flex-col items-start gap-1 px-5 py-6">
         <Image
-          src="/images/logo-events-by-marina.avif"
+          src="/images/logo-events-by-marina-black.png"
           alt="Events By Marina"
           width={197}
           height={203}
